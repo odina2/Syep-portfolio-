@@ -1,0 +1,27 @@
+//both conditions must be true
+consle.log(7>3)&&(5>2);
+
+//only one condition must be true
+consle.log(10>3)||(10>12);
+
+//logical not
+consle.log(!5>3);
+
+function introduction(name,age){
+    consle.log("hello my name is "+ name + " and i am "+ age + "years old.");
+}
+
+introduction("odin",14)
+
+const hour= new Date().getHours();
+let greeting ="";
+
+if (hour<12){
+    greeting = "good morning";
+}else if (hour<18){
+    greeting = "good afternoon";
+}else{
+    greeting = "good evening";
+}
+
+document.getElementById("greeting").InnerText = greeting;
