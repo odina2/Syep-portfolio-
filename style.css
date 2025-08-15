@@ -1,26 +1,73 @@
-*{
-    margin:0; 
+{
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color:green;
+/* Ensure html and body take full height and remove default margins */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling with white border and centered text */
+body {
+    background-color: green;
     text-align: center;
-    line-hight:2.1;
+    line-height: 2.1;
+    border: 10px solid white;
 }
 
-.hero img{
-    border-radius:50%;
+/* Make hero image circular */
+.hero img {
+    border-radius: 50%;
 }
 
-.accent{
-     color:brown;  
+/* Text color for accent class */
+.accent {
+    color: brown;
 }
 
-img{
-      text-align: center;
+/* Center all images and remove inline behavior */
+img {
+    display: block;
+    margin: 0 auto;
+}
 
+/* Layout for hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: left;
+}
 
+/* Text styling inside hero section */
+.hero-text {
+    max-width: 60%;
+    padding: 20px;
+}
 
+/* Section spacing */
+.section {
+    padding: 20px;
+}
+
+/* Skill grid layout */
+.grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
 }

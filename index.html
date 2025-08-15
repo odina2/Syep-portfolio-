@@ -1,57 +1,62 @@
-<!DOCKTYPE html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <mata name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin's portfolio</title>
-    <link href="style.cas" rel="stylesheet"></mata>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Odin's Portfolio</title>
+  <!-- ✅ This links to your separate CSS file -->
+  <link href="style.css" rel="stylesheet" />
+  <script>
+    function showMessage() {
+      alert("This was the hardest thing I made in HTML");
+    }
+  </script>
 </head>
 
-<!--this is where most of our code will live-->
 <body>
-<section id="home" class="hero">
-     <img src="man-giving-thumbs-up-gesture-6599794.jpg" width="300px" hight="300px" />
-    <div> 
-        
-        
-        <nav>
+  <!-- Greeting will appear here -->
+  <p id="greeting" style="font-weight: bold; font-size: 1.2em; margin: 1rem;"></p>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <nav>
+        <h2>About Me</h2>
+        <h3>I am new to coding in general, but I would like to learn and become proficient in it.</h3>
         <ul>
-            <li>test</li>
-            <p>i am new to codeing in genral but i would like to learn and become profecient in it</p>
-            <li>test (write stuff here)</li>
-            <P>i learned css and basic codeing</P>
+          <h3>I would like to have this as one of my career options in the future.</h3>
         </ul>
-     </nav>
-     
-    
+        <h3>I learned coding is very confusing when I first started, but now it's much simpler than expected.</h3>
+      </nav>
+      <button onclick="showMessage()">Click Me</button>
     </div>
-     <h2>Hi, i am <span class="accent">
-        
-        <p id="greeting"></p>
-    
-    </span></h2>
-     <p>I'm a high school learnig web space developement</p>
-</section>
+    <img src="man-giving-thumbs-up-gesture-6599794.jpg" alt="Thumbs up image" />
+  </section>
 
-<section id="about" class="section">
-  <h2>about me</h2>
-  <p>5-6 sentences about me</p>
-</section>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>What I Will Do Next</h2>
+    <p>I will keep practicing my coding to become better.</p>
+  </section>
 
-<section id="skills" class="section">
-    <h2>my skill section</h2>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <h2>Skills That I Learned</h2>
     <div class="grid">
-        <div>html</div>
-        <div>css</div>div>
-        <div>javascript</div>
+      <div>HTML,</div>
+      <div>CSS,</div>
+      <div>JavaScript</div>
     </div>
-</section>
+  </section>
 
-    
+  <footer>
+    SYEP BOONE 2025 - CFFG
+  </footer>
 
-
+  <!-- Link to your external JavaScript file -->
+  <script src="script.js"></script>
 </body>
 
-<footer> SYEP BOONE 2025 - CFFG</footer>
-</html
+</html>
